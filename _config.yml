@@ -1,0 +1,27 @@
+title: Farm Store
+description: >-
+  Farm Store is a practical agriculture blog covering farm products, crop planning, soil health, livestock care, irrigation, sustainable growing, farm business, and everyday rural wisdom.
+baseurl: ""
+url: "https://yourusername.github.io/farmstore"
+author: Farm Store Editorial Team
+email: hello@farmstore.com
+phone: "+1 (415) 555-0182"
+markdown: kramdown
+permalink: /:year/:month/:day/:title.html
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+google_analytics: "UA-XXXXXXXXX-X"
+google_site_verification: "6jsTOtG13iieedPnkqojfbc9DaY8gqMzfh7vSsRJ1nw"
+adsense: "ca-pub-4142907435370595"
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - generate_site.py
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title.html

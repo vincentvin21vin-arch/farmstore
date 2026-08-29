@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}">
+  <meta name="google-site-verification" content="6jsTOtG13iieedPnkqojfbc9DaY8gqMzfh7vSsRJ1nw">
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  {% seo %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4142907435370595" crossorigin="anonymous"></script>
+</head>
+<body>
+  {% include header.html %}
+  <main class="container" role="main">
+    {% unless page.layout == "post" or page.url == "/" %}
+    <div class="site-ad" role="complementary" aria-label="Advertisement">
+      <div class="site-ad__inner">
+        <div class="site-ad__label">Advertisement</div>
+        <div class="ad-container">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-4142907435370595"
+               data-ad-slot="7667638964"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </div>
+    {% endunless %}
+
+    {{ content }}
+
+    <div class="site-ad" role="complementary" aria-label="Advertisement">
+      <div class="site-ad__inner">
+        <div class="site-ad__label">Advertisement</div>
+        <div class="ad-container">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-4142907435370595"
+               data-ad-slot="8569657091"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+</html>
