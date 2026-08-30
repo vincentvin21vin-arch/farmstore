@@ -1,10 +1,6 @@
 ---
 layout: default
 title: Archive
----
----
-layout: default
-title: Archive
 permalink: /archive/
 ---
 
