@@ -2,9 +2,9 @@ title: Farm Store
 description: >-
   Farm Store is a practical agriculture blog covering farm products, crop planning, soil health, livestock care, irrigation, sustainable growing, farm business, and everyday rural wisdom.
 baseurl: ""
-url: "https://yourusername.github.io/farmstore"
+url: "https://www.foodstore.com.ng"
 author: Farm Store Editorial Team
-email: hello@farmstore.com
+email: vincentvin21vin@gmail.com
 phone: "+1 (415) 555-0182"
 markdown: kramdown
 permalink: /:year/:month/:day/:title.html

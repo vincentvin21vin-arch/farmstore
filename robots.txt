@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: www.foodstore.com.ng
+Sitemap: https://www.foodstore.com.ng/sitemap.xml
