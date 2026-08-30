@@ -21,3 +21,4 @@ permalink: /contact/
   <h2>Send a message</h2>
   <p>For business conversations or reader questions, we recommend email so we can respond clearly and within a reasonable time. We will use the information you share only to answer your request and manage communications related to the website.</p>
 </section>
+

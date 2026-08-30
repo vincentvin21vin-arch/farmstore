@@ -7,13 +7,33 @@ title: Archive
   <h1>Archive</h1>
 </section>
 
-<section class="posts-list">
-  {% for post in site.posts %}
-    <article class="post-card">
-      <div class="post-card__meta">{{ post.date | date: '%B %d, %Y' }} · {{ post.categories | first }}</div>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
-      <a href="{{ post.url | relative_url }}" class="read-more">Read article →</a>
-    </article>
-  {% endfor %}
+<section class="content-page">
+  <p>All posts, organized by year and month for easier browsing.</p>
+
+  <div class="archive-list">
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% assign previous_year = nil %}
+    {% assign previous_month = nil %}
+    <ul>
+    {% for post in posts %}
+      {% assign Y = post.date | date: "%Y" %}
+      {% assign M = post.date | date: "%B" %}
+
+      {% if Y != previous_year %}
+        {% if previous_year != nil %}</ul>{% endif %}
+        <h2>{{ Y }}</h2>
+        {% assign previous_year = Y %}
+        {% assign previous_month = nil %}
+        <ul>
+      {% endif %}
+
+      {% if M != previous_month %}
+        <h3>{{ M }}</h3>
+        {% assign previous_month = M %}
+      {% endif %}
+
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%Y-%m-%d" }}</small></li>
+    {% endfor %}
+    </ul>
+  </div>
 </section>

@@ -25,4 +25,9 @@ permalink: /about/
     <li>We publish useful, detailed reviews and guides related to real farming decisions.</li>
     <li>We keep the site clean, readable, and easy to browse on phone or desktop.</li>
   </ul>
+
+  <h2>About the author and editorial approach</h2>
+  <p>Farm Store content is researched and written by contributors with hands-on farming experience and editorial review. We prioritize original reporting, on-farm examples, and practical checklists. Where we link to external sources, we add commentary or practical interpretation to ensure the reader gains additional value beyond the original source.</p>
+
+  <p>To suggest topics or ask about partnerships, see our Contact page.</p>
 </section>
