@@ -1,18 +1,18 @@
 <header class="site-header">
   <nav class="site-nav" aria-label="Main navigation">
     <div class="site-nav-inner">
-      <a href="{{ '/' | relative_url }}" class="site-brand">
+      <a href="{{ '/' | absolute_url }}" class="site-brand">
         <img src="{{ '/assets/img/foodstorelogo.png' | relative_url }}" alt="{{ site.title }}" class="site-logo" />
         <span class="site-title">{{ site.title }}</span>
       </a>
       <ul id="main-navigation" class="nav-links">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/categories/' | relative_url }}">Categories</a></li>
-        <li><a href="{{ '/archive/' | relative_url }}">Archive</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-        <li><a href="{{ '/privacy/' | relative_url }}">Privacy</a></li>
-        <li><a href="{{ '/terms/' | relative_url }}">Terms</a></li>
+        <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+        <li><a href="{{ '/categories/' | absolute_url }}">Categories</a></li>
+        <li><a href="{{ '/archive/' | absolute_url }}">Archive</a></li>
+        <li><a href="{{ '/about/' | absolute_url }}">About</a></li>
+        <li><a href="{{ '/contact/' | absolute_url }}">Contact</a></li>
+        <li><a href="{{ '/privacy/' | absolute_url }}">Privacy</a></li>
+        <li><a href="{{ '/terms/' | absolute_url }}">Terms</a></li>
       </ul>
       <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>
     </div>
