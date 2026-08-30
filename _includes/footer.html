@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h3>About Farm Store</h3>
+      <p>{{ site.description }}</p>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+        <li><a href="{{ '/terms/' | relative_url }}">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Email: {{ site.email }}</li>
+        <li>Phone: {{ site.phone }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  </div>
+</footer>
