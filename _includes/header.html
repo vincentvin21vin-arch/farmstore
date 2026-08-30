@@ -1,7 +1,10 @@
 <header class="site-header">
   <nav class="site-nav" aria-label="Main navigation">
     <div class="site-nav-inner">
-      <a href="{{ '/' | relative_url }}" class="site-brand">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" class="site-brand">
+        <img src="{{ '/assets/img/foodstorelogo.png' | relative_url }}" alt="{{ site.title }}" class="site-logo" />
+        <span class="site-title">{{ site.title }}</span>
+      </a>
       <ul class="nav-links">
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/about/' | relative_url }}">About</a></li>

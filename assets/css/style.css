@@ -28,7 +28,17 @@ a:hover { text-decoration: underline; }
   gap: 20px;
 }
 .site-brand {
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.site-logo {
+  width: 44px;
+  height: auto;
+  border-radius: 6px;
+}
+.site-title {
+  font-size: 1.4rem;
   font-weight: 700;
   color: white;
 }

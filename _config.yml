@@ -12,9 +12,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-google_analytics: "UA-XXXXXXXXX-X"
+google_analytics: "G-15DMJTT5R1"
 google_site_verification: "6jsTOtG13iieedPnkqojfbc9DaY8gqMzfh7vSsRJ1nw"
-adsense: "ca-pub-4142907435370595"
+adsense: "ca-pub-9544545496987230"
+logo: "/assets/img/foodstorelogo.png"
+twitter_username: ""
 exclude:
   - .gitignore
   - Gemfile

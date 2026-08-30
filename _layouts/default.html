@@ -9,7 +9,48 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
   {% seo %}
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4142907435370595" crossorigin="anonymous"></script>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate:160 | default: site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/img/foodstorelogo.png' | absolute_url }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate:160 | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/img/foodstorelogo.png' | absolute_url }}">
+  <meta name="twitter:creator" content="{{ site.twitter_username | default: '' }}">
+
+  <!-- Icons -->
+  <link rel="icon" href="{{ '/assets/img/foodstorelogo.png' | relative_url }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/foodstorelogo.png' | relative_url }}">
+
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ '/assets/img/foodstorelogo.png' | absolute_url }}",
+    "contactPoint": [{ "@type":"ContactPoint","email":"{{ site.email }}","contactType":"customer support"}]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-15DMJTT5R1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-15DMJTT5R1');
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9544545496987230" crossorigin="anonymous"></script>
 </head>
 <body>
   {% include header.html %}
@@ -20,11 +61,11 @@
         <div class="site-ad__label">Advertisement</div>
         <div class="ad-container">
           <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-4142907435370595"
-               data-ad-slot="7667638964"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
+            style="display:block"
+            data-ad-client="ca-pub-9544545496987230"
+            data-ad-slot="3625027533"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
@@ -40,11 +81,11 @@
         <div class="site-ad__label">Advertisement</div>
         <div class="ad-container">
           <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-4142907435370595"
-               data-ad-slot="8569657091"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
+            style="display:block"
+            data-ad-client="ca-pub-9544545496987230"
+            data-ad-slot="6333634707"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
