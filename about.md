@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About Farm Store
+permalink: /about/
 ---
 
 <section class="page-header">

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Terms & Conditions
+permalink: /terms/
 ---
 
 <section class="page-header">

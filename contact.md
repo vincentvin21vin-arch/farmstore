@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact Farm Store
+permalink: /contact/
 ---
 
 <section class="page-header">
