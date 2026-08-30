@@ -1,0 +1,15 @@
+<aside class="category-sidebar">
+  <h3>Categories</h3>
+  <ul>
+    {% for category in site.categories | sort %}
+      {% assign name = category[0] %}
+      <li><a href="{{ '/categories/#' | append: name | slugify | relative_url }}">{{ name }} ({{ category[1].size }})</a></li>
+    {% endfor %}
+  </ul>
+  <h3>Recent posts</h3>
+  <ul>
+    {% for post in site.posts limit:6 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>
