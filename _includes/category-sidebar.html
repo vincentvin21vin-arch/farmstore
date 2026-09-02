@@ -3,7 +3,7 @@
   <ul>
     {% for category in site.categories | sort %}
       {% assign name = category[0] %}
-      <li><a href="{{ '/categories/#' | append: name | slugify | relative_url }}">{{ name }} ({{ category[1].size }})</a></li>
+        <li><a href="{{ '/category/' | append: name | downcase | replace: ' ', '-' | append: '.html' | relative_url }}">{{ name }} ({{ category[1].size }})</a></li>
     {% endfor %}
   </ul>
   <h3>Recent posts</h3>

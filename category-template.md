@@ -2,7 +2,8 @@
 title: "Category: {{ category }}"
 layout: default
 title: "Category"
-permalink: /categories/{{ page.category | downcase | replace: ' ', '-' }}/
+published: false
+permalink: "/categories/{{ page.category | downcase | replace: ' ', '-' }}/"
 ---
 
 <section class="page-header">

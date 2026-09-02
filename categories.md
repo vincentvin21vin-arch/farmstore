@@ -26,7 +26,7 @@ permalink: /categories/
             </li>
           {% endfor %}
           {% if category[1].size > 8 %}
-            <li><a href="{{ '/categories/' | append: cat_name | downcase | replace: ' ', '-' | append: '/' | relative_url }}">See all posts in {{ cat_name }} →</a></li>
+            <li><a href="{{ '/category/' | append: cat_name | downcase | replace: ' ', '-' | append: '.html' | relative_url }}">See all posts in {{ cat_name }} →</a></li>
           {% endif %}
         </ul>
       </li>
